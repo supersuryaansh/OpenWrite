@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="assets/css/popup.css"/>
+	<script src="assets/js/popup.js"></script> 
+</head>
+
+<body>
+    <section class="contact-clean">
+        <div class="form">
+            <h2 class="text-center">Generate content</h2>
+            <div class="mb-3"><input class="form-control" type="password" data-bs-toggle="tooltip" data-bss-tooltip="" data-bs-placement="bottom" placeholder="API" name="APIKey" required="" title="Your openAI API key goes here"></div>
+            <div class="mb-3"></div>
+            <div class="mb-3"><textarea class="form-control" data-bs-toggle="tooltip" data-bss-tooltip="" data-bs-placement="bottom" name="Outline" placeholder="Starting text.." rows="14" required="" title="Write the first line of your article to autogenerate related content" ></textarea></div>
+            <p id="content">Type something above and press generate</p>
+            <div class="mb-3"><button class="btn btn-primary"  onclick="STATUSChanged()">Generate</button></div>
+           </div> 
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+    <script src="assets/js/req.js"></script>
+<script src="./renderer.js"></script>
+</body>
+
+</html>

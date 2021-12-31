@@ -1,0 +1,40 @@
+/*  POPUP WRAPPER */
+#popwrap {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s;
+}
+
+/* SHOW POPUP */
+#popwrap.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* POPUP BOX */
+#popbox {
+  position: relative;
+  box-sizing: border-box;
+      width:90%;
+    margin:0 auto;
+    background-color:#fff;
+    padding:40px;
+    border-radius:4px;
+    color:#505e6c;
+    box-shadow:1px 1px 5px rgba(0,0,0,.1)
+}
+
+/* TEXT + CLOSE BUTTON  */
+#poptext { background: #fff; }
+#popclose {
+  position: absolute;
+  top: 0; right: 5px;
+  cursor: pointer;
+}
